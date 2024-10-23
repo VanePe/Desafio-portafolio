@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/reset.css" >
+    <link rel="stylesheet" href="./estilos/style.css" >
     <title>Portafolio</title>
 </head>
 <body>
-    <!--Landing page-->
-    <header>
-        <nav>
-            <ul>
+    <!--Cabecera-->
+    <header class="contenedor__cabecera" >
+        <p class="cabecera__negrilla" aria-label="Laura Ibañez" >Laura Ibáñez</p>
+        <nav class="cabecera__nav" >
+            <ul class="cabecera__lista" >
                 <li>Sobre mi</li>
                 <li>Skills</li>
                 <li>Hobbies</li>
                 <li>Formación</li>
                 <li>Proyectos</li>
-                <li>Contacto</li>
+                <li class="cabecera__negrilla" >Contacto</li>
             </ul>
         </nav>
     </header>
 
     <!--Información inicial-->
-    <section>
+    <section class="contenedor__informacion" >
         <img src="./assets/perfil.jpeg" alt="Foto de Laura Ibañez">
         <div>
             <h1>Hola soy Laura Vanessa Ibañez Perez</h1>
@@ -39,7 +41,7 @@
     </section>
 
     <!--Sección sobre mi-->
-    <section>
+    <section class="contenedor__sobreMi" >
         <h2>Sobre Mi</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit erat aliquam, dui mattis morbi hac platea tellus tempus primis vitae, 
             suspendisse molestie bibendum himenaeos imperdiet donec ligula odio. Convallis orci montes non cubilia praesent bibendum morbi augue 
@@ -50,12 +52,12 @@
     </section>
 
     <!--Habilidades y pasatiempos-->
-    <articule>
+    <articule class="contenedor__habilidadesPasatiempos" >
 
         <!--Habilidades-->
-        <section>
+        <section class="contenedor__habilidades" >
             <h2>Skills</h2>
-            <ul>
+            <ul class="habilidades__lista" >
                 <li>
                     <img>
                     <p>HTML5</p>
@@ -80,35 +82,38 @@
         </section>
 
         <!--Pasatiempos-->
-        <section>
+        <section class="contenedor__pasatiempos" >
             <h2>Pasatiempos</h2>
-            <li>
-                <img>
-                <p>Leer</p>
-            </li>
-            <li>
-                <img>
-                <p>Escuchar música</p>
-            </li>
-            <li>
-                <img>
-                <p>Ver series asiaticas</p>
-            </li>
-            <li>
-                <img>
-                <p>Hacer ejercicio</p>
-            </li>
-            <li>
-                <img>
-                <p>Aprender cosas nuevas</p>
-            </li>
+            <ul class="pasatiempos__lista" >
+                <li>
+                    <img>
+                    <p>Leer</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Escuchar música</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Ver series asiaticas</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Hacer ejercicio</p>
+                </li>
+                <li>
+                    <img>
+                    <p>Aprender cosas nuevas</p>
+                </li>
+            </ul>
+            
         </section>
     </articule>
 
     <!--Formación academica-->
-    <section>
+    <section class="contenedor__informacionAcademica" >
         <h2>Formación academica</h2>
-        <ul>
+        <ul class="informacionAcademica__lista" >
             <li>
                 <div>
                     <img src="" alt="Universidad Francisco de Paula Santander">
@@ -134,9 +139,9 @@
     </section>
 
     <!--Experiencia profesional-->
-    <articule>
+    <articule class="contenedor__Experiencia" >
         <h2>Experiencia profesional</h2>
-        <section>
+        <section class="contenedor__Experiencia--izquierdo" >
             <img src="" alt="Encriptador de texto">
             <ul>
                 <li><h3>Encriptador de texto</h3></li>
@@ -147,7 +152,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="contenedor__Experiencia--derecho" >
             <img src="" alt="Juego del número secreto">
             <ul>
                 <li><h3>Juego del número secreto</h3></li>

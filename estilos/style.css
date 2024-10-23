@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+
+:root{
+    --azul: #2A7AE4;
+    --tierra-fondo: #EAF2FD;
+    --blanco: #FFFFFF;
+    --raleway-font: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--raleway-font);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/*Cabecera*/
+.contenedor__cabecera{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 11rem;
+}
+
+.cabecera__negrilla{
+    font-weight: 800;
+}
+
+.cabecera__lista{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*Información inicial*/
+.contenedor__informacion{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Sobre mi*/
+.contenedor__sobreMi{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Habilidades y pasatiempos*/
+.contenedor__habilidadesPasatiempos{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Hbailidades*/
+.habilidades__lista{
+    display: flex;
+}
+
+/*Pasatiempos*/
+.pasatiempos__lista{
+    display: flex;
+}
+
+/*Formacion academica*/
+.contenedor__informacionAcademica{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacionAcademica__lista{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Experiencia profesional*/
+.contenedor__Experiencia{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Experiencia profesional imagen a la izquierda*/
+.contenedor__Experiencia--izquierdo{
+    display: flex;
+}
+
+/*Experiencia profesional imagen a la izquierda*/
+.contenedor__Experiencia--derecho{
+    display: flex;
+    flex-direction: row-reverse;
+}
