@@ -4,17 +4,21 @@
     --azul: #2A7AE4;
     --tierra-fondo: #EAF2FD;
     --blanco: #FFFFFF;
+    --negro-gris: #343a40;
+    --balnco-fondo: #F5F5F5;
     --raleway-font: "Raleway", sans-serif;
 }
 
 body {
     font-family: var(--raleway-font);
+    color: var(--negro-gris);
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: auto;
     box-sizing: border-box;
     text-align: center;
+    background-color: var(--balnco-fondo);
 }
 
 
@@ -26,6 +30,9 @@ body {
 }
 
 .cabecera__negrilla{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-weight: 800;
 }
 
@@ -38,12 +45,55 @@ body {
 .contenedor__informacion{
     display: flex;
     flex-direction: row-reverse;
+    gap: 2rem;
+    margin: 3rem 11rem;
+    align-items: center;
+}
+
+.informacion__img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.informacion__div{
+    display: flex;
+    flex-direction: column;
+   gap: 2rem;
+}
+
+.informacion__titulo{
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: start;
+}
+
+.infromacion__descripcion{
+    font-size: 1.1rem;
+    text-align: start;
+}
+
+.informacion__lista{
+    display: flex;
+    gap: 3rem;
+}
+
+.informacion__lista-img{
+    display: flex;
+    align-items: center;
 }
 
 /*Sobre mi*/
 .contenedor__sobreMi{
     display: flex;
     flex-direction: column;
+    background-color: var(--tierra-fondo);
+    width: 100%;
+    padding: 4rem 0rem;
+}
+
+.sobreMi__texto{
+    text-align: start;
+    padding: 1rem 40rem 1rem 11rem;
 }
 
 /*Habilidades y pasatiempos*/
@@ -52,9 +102,20 @@ body {
     flex-direction: column;
 }
 
+.titulo{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 /*Hbailidades*/
-.habilidades__lista{
+.habilidades__lista {
     display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.habilidades__items{
+    background-color: var(--blanco);
 }
 
 /*Pasatiempos*/

@@ -10,7 +10,7 @@
 <body>
     <!--Cabecera-->
     <header class="contenedor__cabecera" >
-        <p class="cabecera__negrilla" aria-label="Laura Ibañez" >Laura Ibáñez</p>
+        <p class="cabecera__negrilla" aria-label="Laura Ibañez" ><img src="assets/stars.svg">Laura Ibáñez</p>
         <nav class="cabecera__nav" >
             <ul class="cabecera__lista" >
                 <li>Sobre mi</li>
@@ -25,25 +25,33 @@
 
     <!--Información inicial-->
     <section class="contenedor__informacion" >
-        <img src="./assets/perfil.jpeg" alt="Foto de Laura Ibañez">
-        <div>
-            <h1>Hola soy Laura Vanessa Ibañez Perez</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit erat aliquam, dui mattis morbi hac platea tellus tempus primis vitae, 
-                suspendisse molestie bibendum himenaeos imperdiet donec ligula odio.
+        <img class="informacion__img" src="./assets/perfil.jpeg" alt="Foto de Laura Ibañez">
+        <div class="informacion__div" >
+            <h1 class="informacion__titulo" >Hola soy Laura Vanessa Ibañez Perez</h1>
+            <p class="infromacion__descripcion" >Estudiante de ingeniería en sistemas interesada por la gestión de proyectos y el desarrollo frontend.
+                He ocupado el puesto de scrum y líder de proyecto en varios trabajos de la universidad, así como cursado las asignaturas designadas al 
+                aprendizaje de la gestión de proyectos. Pertenezco al semillero de investigación enfocada en el área de gestión de proyectos GPROS 
+                de la universidad y actualmente participo en el proyecto Oracle One con Alura Latam.
             </p>
-            <ul>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
-                <li>Instagram</li>
-                <li>Curriculo</li>
+            <ul class="informacion__lista" >
+                <a  class="informacion__lista-img" href="https://github.com/VanePe" aria-label="Link a github" >GitHub<img src="assets/view-other--page.svg"></a>
+                <a class="informacion__lista-img"  href="https://www.linkedin.com/in/laura-vanessa-ibáñez/" aria-label="Link a linkedin" >LinkedIn<img src="assets/view-other--page.svg"></a>
+                <a  class="informacion__lista-img" href="#" >Instagram<img src="assets/view-other--page.svg" aria-label="Link a instagram" ></a>
+                <a class="informacion__lista-img" href="assets/Hoja de Vida Laura Vanessa Ibañez Perez.pdf" download="Curriculo" aria-label="Descargar curriculo" >Curriculo<img src="assets/view-other--page.svg"></a>
             </ul>
         </div>
     </section>
 
     <!--Sección sobre mi-->
     <section class="contenedor__sobreMi" >
-        <h2>Sobre Mi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit erat aliquam, dui mattis morbi hac platea tellus tempus primis vitae, 
+        <h2 class="titulo sobreMi__texto" >Sobre Mi</h2>
+        <p class="sobreMi__texto" >Lorem ipsum dolor sit amet consectetur adipiscing elit erat aliquam, dui mattis morbi hac platea tellus tempus primis vitae, 
+            suspendisse molestie bibendum himenaeos imperdiet donec ligula odio. Convallis orci montes non cubilia praesent bibendum morbi augue 
+            volutpat, dui fusce integer venenatis dis magna consequat ante, sagittis taciti ultricies per penatibus iaculis a in. Massa maecenas 
+            id sagittis est hac nisi, egestas fames arcu inceptos. Cubilia erat convallis integer porta tincidunt pretium lacinia vitae 
+            phasellus magna, fringilla nunc velit diam aenean ante fames mattis.
+        </p>
+        <p class="sobreMi__texto" >Lorem ipsum dolor sit amet consectetur adipiscing elit erat aliquam, dui mattis morbi hac platea tellus tempus primis vitae, 
             suspendisse molestie bibendum himenaeos imperdiet donec ligula odio. Convallis orci montes non cubilia praesent bibendum morbi augue 
             volutpat, dui fusce integer venenatis dis magna consequat ante, sagittis taciti ultricies per penatibus iaculis a in. Massa maecenas 
             id sagittis est hac nisi, egestas fames arcu inceptos. Cubilia erat convallis integer porta tincidunt pretium lacinia vitae 
@@ -53,56 +61,55 @@
 
     <!--Habilidades y pasatiempos-->
     <articule class="contenedor__habilidadesPasatiempos" >
-
         <!--Habilidades-->
         <section class="contenedor__habilidades" >
-            <h2>Skills</h2>
+            <h2 class="titulo" >Habilidades</h2>
             <ul class="habilidades__lista" >
-                <li>
-                    <img>
+                <li class="habilidades__items" >
+                    <img src="assets/html5.svg" alt="Icono HTML5" >
                     <p>HTML5</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="assets/css.svg" alt="Icono CSS" >
                     <p>CSS</p>
                 </li>
                 <li>
-                    <img>
-                    <p>JavaScript</p>
+                    <img src="assets/Javasrcipt.svg" alt="Icono Javascript" >
+                    <p>Javascript</p>
                 </li>
                 <li>
-                    <img>
-                    <p>Python</p>
-                </li>
-                <li>
-                    <img>
+                    <img src="assets/sql.svg" alt="Icono SQL" >
                     <p>SQL</p>
+                </li>
+                <li>
+                    <img src="assets/scrum.svg" alt="Icono Scrum" >
+                    <p>Scrum</p>
                 </li>
             </ul>
         </section>
 
         <!--Pasatiempos-->
         <section class="contenedor__pasatiempos" >
-            <h2>Pasatiempos</h2>
+            <h2 class="titulo">Pasatiempos</h2>
             <ul class="pasatiempos__lista" >
                 <li>
-                    <img>
+                    <img src="assets/read.svg" alt="Icono de alguien leyendo" >
                     <p>Leer</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="assets/music.svg" alt="Escuchar musica" >
                     <p>Escuchar música</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="assets/tv.svg" alt="Ver series asiaticas" >
                     <p>Ver series asiaticas</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="assets/exercise.svg" alt="Hacer ejercicio" >
                     <p>Hacer ejercicio</p>
                 </li>
                 <li>
-                    <img>
+                    <img src="assets/learn.svg" alt="Aprender cosas nuevas" >
                     <p>Aprender cosas nuevas</p>
                 </li>
             </ul>
@@ -112,7 +119,7 @@
 
     <!--Formación academica-->
     <section class="contenedor__informacionAcademica" >
-        <h2>Formación academica</h2>
+        <h2 class="titulo" >Formación academica</h2>
         <ul class="informacionAcademica__lista" >
             <li>
                 <div>
@@ -140,7 +147,7 @@
 
     <!--Experiencia profesional-->
     <articule class="contenedor__Experiencia" >
-        <h2>Experiencia profesional</h2>
+        <h2 class="titulo" >Experiencia profesional</h2>
         <section class="contenedor__Experiencia--izquierdo" >
             <img src="" alt="Encriptador de texto">
             <ul>
@@ -167,7 +174,7 @@
 
     <!--Redes para contactar-->
     <section>
-        <h2>Contacto</h2>
+        <h2 class="titulo" >Contacto</h2>
         <form>
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo Electrónico">
@@ -176,7 +183,7 @@
         </form>
     </section>
 
-
+    <!--Pide pagina-->
     <footer>
         <h4>Desarrollado por Laura Ibañez</h4>
         <p>2024</p>
