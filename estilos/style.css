@@ -21,18 +21,16 @@ body {
     background-color: var(--balnco-fondo);
 }
 
-
 /*Cabecera*/
 .contenedor__cabecera{
     display: flex;
     justify-content: space-between;
-    margin: 3rem 11rem;
+    margin: 3% 11%;
+    align-content: center;
 }
 
 .cabecera__negrilla{
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
     font-weight: 800;
 }
 
@@ -41,24 +39,31 @@ body {
     gap: 1.5rem;
 }
 
+.cabecera__lista--none{
+    display: none;
+}
+
 /*Información inicial*/
 .contenedor__informacion{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 2rem;
-    margin: 3rem 11rem;
-    align-items: center;
+    margin: 3rem 2%;
+    align-content: center;
 }
 
 .informacion__img{
     width: 30%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .informacion__div{
     display: flex;
     flex-direction: column;
-   gap: 2rem;
+    gap: 2rem;
 }
 
 .informacion__titulo{
@@ -74,7 +79,8 @@ body {
 
 .informacion__lista{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
+    font-weight: 800;
 }
 
 .informacion__lista-img{
@@ -86,14 +92,14 @@ body {
 .contenedor__sobreMi{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     background-color: var(--tierra-fondo);
     width: 100%;
-    padding: 4rem 0rem;
 }
 
 .sobreMi__texto{
     text-align: start;
-    padding: 1rem 40rem 1rem 11rem;
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 /*Habilidades y pasatiempos*/
@@ -105,33 +111,63 @@ body {
 .titulo{
     font-size: 2rem;
     font-weight: 800;
+    margin: 2rem 0rem;
 }
 
-/*Hbailidades*/
-.habilidades__lista {
+.habilidadesPasatiempos__lista {
     display: flex;
     justify-content: space-evenly;
     align-content: space-around;
+    gap: 2rem;
+    margin: 1rem 1rem 1rem 6%;
+    flex-wrap: wrap;
 }
 
-.habilidades__items{
-    background-color: var(--blanco);
-}
-
-/*Pasatiempos*/
-.pasatiempos__lista{
+.habilidadesPasatiempos__items{
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    background-color: var(--blanco);
+    height: 5rem;
+    width: 10rem;
+    font-size: 1rem;
+    padding: 5rem 0rem 0rem 1rem;
+    text-align: start;
+}
+
+.habilidadesPasatiempos__items img{
+    width: 2rem;
+    height: 2rem;
 }
 
 /*Formacion academica*/
 .contenedor__informacionAcademica{
     display: flex;
     flex-direction: column;
+    background-color: var(--tierra-fondo);
 }
 
 .informacionAcademica__lista{
     display: flex;
     flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 3rem 1rem 11%;
+    gap: 1.3rem;
+}
+
+.informacionAcademica__div{
+    width: 26.5rem;
+    height: 10rem;
+    padding: 5rem 0rem;
+    background-color: var(--blanco);
+}
+
+.informacionAcademica__div img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;   
 }
 
 /*Experiencia profesional*/
@@ -149,4 +185,75 @@ body {
 .contenedor__Experiencia--derecho{
     display: flex;
     flex-direction: row-reverse;
+}
+
+/*Tablets y pantallas más grandes*/
+@media (min-width: 750px) {
+    /*Informacion*/
+    .contenedor__informacion{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .informacion__lista{
+        display: flex;
+        gap: 3rem;
+    }
+
+    /*Sobre mi*/
+
+}
+
+/*Pantallas grandes*/
+@media (min-width: 1024px) {
+
+    /*Cabecera*/
+    .cabecera__lista--none{
+        display: flex;
+    }
+
+    /*Informacion*/
+    .contenedor__informacion{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        margin: 3% 11%;
+        align-items: center;
+    }
+
+    .informacion__lista{
+        display: flex;
+        gap: 3rem;
+    }
+
+    /*Sobre mi*/
+    .sobreMi__texto{
+        text-align: start;
+        padding: 0rem 40% 0rem 11%;
+    }
+
+    /*Informacion academica*/
+    .informacionAcademica__lista{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        flex-wrap: wrap;
+        margin: 1rem 3rem 1rem 11%;
+        gap: 1.3rem;
+    }
+    
+    .informacionAcademica__div{
+        width: 26.5rem;
+        height: 10rem;
+        padding: 5rem 0rem;
+        background-color: var(--blanco);
+    }
+    
+    .informacionAcademica__div img{
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;   
+    }
 }

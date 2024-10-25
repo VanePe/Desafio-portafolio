@@ -13,11 +13,11 @@
         <p class="cabecera__negrilla" aria-label="Laura Ibañez" ><img src="assets/stars.svg">Laura Ibáñez</p>
         <nav class="cabecera__nav" >
             <ul class="cabecera__lista" >
-                <li>Sobre mi</li>
-                <li>Skills</li>
-                <li>Hobbies</li>
-                <li>Formación</li>
-                <li>Proyectos</li>
+                <li class="cabecera__lista--none" >Sobre mi</li>
+                <li class="cabecera__lista--none"  >Skills</li>
+                <li class="cabecera__lista--none"  >Hobbies</li>
+                <li class="cabecera__lista--none"  >Formación</li>
+                <li class="cabecera__lista--none"  >Proyectos</li>
                 <li class="cabecera__negrilla" >Contacto</li>
             </ul>
         </nav>
@@ -34,10 +34,10 @@
                 de la universidad y actualmente participo en el proyecto Oracle One con Alura Latam.
             </p>
             <ul class="informacion__lista" >
-                <a  class="informacion__lista-img" href="https://github.com/VanePe" aria-label="Link a github" >GitHub<img src="assets/view-other--page.svg"></a>
-                <a class="informacion__lista-img"  href="https://www.linkedin.com/in/laura-vanessa-ibáñez/" aria-label="Link a linkedin" >LinkedIn<img src="assets/view-other--page.svg"></a>
-                <a  class="informacion__lista-img" href="#" >Instagram<img src="assets/view-other--page.svg" aria-label="Link a instagram" ></a>
-                <a class="informacion__lista-img" href="assets/Hoja de Vida Laura Vanessa Ibañez Perez.pdf" download="Curriculo" aria-label="Descargar curriculo" >Curriculo<img src="assets/view-other--page.svg"></a>
+                <a target="_blank" class="informacion__lista-img" href="https://github.com/VanePe" aria-label="Link a github" >GitHub<img src="assets/view-other--page.svg"></a>
+                <a target="_blank" class="informacion__lista-img"  href="https://www.linkedin.com/in/laura-vanessa-ibáñez/" aria-label="Link a linkedin" >LinkedIn<img src="assets/view-other--page.svg"></a>
+                <a  target="_blank" class="informacion__lista-img" href="#" >Instagram<img src="assets/view-other--page.svg" aria-label="Link a instagram" ></a>
+                <a target="_blank" class="informacion__lista-img" href="assets/Hoja de Vida Laura Vanessa Ibañez Perez.pdf" download="Curriculo" aria-label="Descargar curriculo" >Curriculo<img src="assets/view-other--page.svg"></a>
             </ul>
         </div>
     </section>
@@ -62,53 +62,53 @@
     <!--Habilidades y pasatiempos-->
     <articule class="contenedor__habilidadesPasatiempos" >
         <!--Habilidades-->
-        <section class="contenedor__habilidades" >
+        <section class="contenedor__habilidadesPasatiempos" >
             <h2 class="titulo" >Habilidades</h2>
-            <ul class="habilidades__lista" >
-                <li class="habilidades__items" >
-                    <img src="assets/html5.svg" alt="Icono HTML5" >
+            <ul class="habilidadesPasatiempos__lista" >
+                <li class="habilidadesPasatiempos__items" >
+                    <img  src="assets/html5.svg" alt="Icono HTML5" >
                     <p>HTML5</p>
                 </li>
-                <li>
+                <li class="habilidadesPasatiempos__items" >
                     <img src="assets/css.svg" alt="Icono CSS" >
                     <p>CSS</p>
                 </li>
-                <li>
-                    <img src="assets/Javasrcipt.svg" alt="Icono Javascript" >
+                <li class="habilidadesPasatiempos__items" >
+                    <img  src="assets/Javasrcipt.svg" alt="Icono Javascript" >
                     <p>Javascript</p>
                 </li>
-                <li>
-                    <img src="assets/sql.svg" alt="Icono SQL" >
+                <li class="habilidadesPasatiempos__items" >
+                    <img  src="assets/sql.svg" alt="Icono SQL" >
                     <p>SQL</p>
                 </li>
-                <li>
-                    <img src="assets/scrum.svg" alt="Icono Scrum" >
+                <li class="habilidadesPasatiempos__items" >
+                    <img  src="assets/scrum.svg" alt="Icono Scrum" >
                     <p>Scrum</p>
-                </li>
+                </li class="habilidadesPasatiempos__items" >
             </ul>
         </section>
 
         <!--Pasatiempos-->
-        <section class="contenedor__pasatiempos" >
+        <section class="contenedor__habilidadesPasatiempos" >
             <h2 class="titulo">Pasatiempos</h2>
-            <ul class="pasatiempos__lista" >
-                <li>
+            <ul class="habilidadesPasatiempos__lista" >
+                <li class="habilidadesPasatiempos__items">
                     <img src="assets/read.svg" alt="Icono de alguien leyendo" >
                     <p>Leer</p>
                 </li>
-                <li>
+                <li class="habilidadesPasatiempos__items" >
                     <img src="assets/music.svg" alt="Escuchar musica" >
                     <p>Escuchar música</p>
                 </li>
-                <li>
+                <li class="habilidadesPasatiempos__items" >
                     <img src="assets/tv.svg" alt="Ver series asiaticas" >
                     <p>Ver series asiaticas</p>
                 </li>
-                <li>
+                <li class="habilidadesPasatiempos__items">
                     <img src="assets/exercise.svg" alt="Hacer ejercicio" >
                     <p>Hacer ejercicio</p>
                 </li>
-                <li>
+                <li class="habilidadesPasatiempos__items" >
                     <img src="assets/learn.svg" alt="Aprender cosas nuevas" >
                     <p>Aprender cosas nuevas</p>
                 </li>
@@ -120,24 +120,24 @@
     <!--Formación academica-->
     <section class="contenedor__informacionAcademica" >
         <h2 class="titulo" >Formación academica</h2>
-        <ul class="informacionAcademica__lista" >
-            <li>
-                <div>
-                    <img src="" alt="Universidad Francisco de Paula Santander">
+        <ul class="informacionAcademica__lista">
+            <li class="informacion__lista--li" >
+                <div class="informacionAcademica__div" >
+                    <img src="assets/ufpso.png" alt="Universidad Francisco de Paula Santander">
                 </div>
                 <h3>Estudiante de ingenieria en sistemas</h3>
                 <p>2020 - Presente</p>
             </li>
             <li>
-                <div>
-                    <img src="" alt="Logo de Alura">
+                <div class="informacionAcademica__div" >
+                    <img src="assets/Alura-logo.svg" alt="Logo de Alura">
                 </div>
                 <h3>Desafío encriptador de texto</h3>
                 <p>2024 Alura Latam</p>
             </li>
             <li>
-                <div>
-                    <img src="" alt="Logo de Alura">
+                <div class="informacionAcademica__div" >
+                    <img src="assets/Alura-logo.svg" alt="Logo de Alura">
                 </div>
                 <h3>Front-End UI</h3>
                 <p>2024 ALura Latam</p>
