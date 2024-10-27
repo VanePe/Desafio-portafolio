@@ -9,6 +9,10 @@
     --raleway-font: "Raleway", sans-serif;
 }
 
+*{
+    border: 1px solid red;
+}
+
 body {
     font-family: var(--raleway-font);
     color: var(--negro-gris);
@@ -151,22 +155,34 @@ body {
 .informacionAcademica__lista{
     display: flex;
     flex-direction: row;
-    align-content: space-around;
     flex-wrap: wrap;
-    margin: 1rem 3rem 1rem 11%;
+    align-content: space-around;
+    justify-content: center;
     gap: 1.3rem;
 }
 
+.informacionAcademica__lista h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: start;
+    padding: 0.8rem 0rem;
+}
+
+.informacionAcademica__lista p{
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
 .informacionAcademica__div{
-    width: 26.5rem;
-    height: 10rem;
-    padding: 5rem 0rem;
+    width: 25rem;
+    height: 12rem;
     background-color: var(--blanco);
+    align-content: center;
 }
 
 .informacionAcademica__div img{
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     object-fit: contain;   
 }
 
@@ -174,18 +190,111 @@ body {
 .contenedor__Experiencia{
     display: flex;
     flex-direction: column;
+    padding: 3rem;
 }
 
-/*Experiencia profesional imagen a la izquierda*/
-.contenedor__Experiencia--izquierdo{
+.experiencia__section{
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
 }
 
-/*Experiencia profesional imagen a la izquierda*/
-.contenedor__Experiencia--derecho{
+.experiencia__ul{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
 }
+
+.experiencia__ul h3{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.experiencia__ul li{
+    display: flex;
+    gap: 1rem;
+}
+
+.experiencia__ul a{
+    width: 8rem;
+    height: 3rem;
+    align-content: center;
+}
+
+.experiencia__ul a:nth-child(1){
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+
+.experiencia__ul a:nth-child(2){
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+/*Seccion de contacto*/
+.contenedor__contacto{
+    text-align: start;
+    background-color: var(--tierra-fondo);
+}
+
+.contacto__div{
+    padding-top: 1rem;
+    padding-left: 5%;
+}
+
+.contacto__div p{
+    padding-bottom: 2rem;
+
+}
+
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contacto__formulario input{
+    height: 4.5rem;
+    width: 90%;
+}
+
+.contacto__formulario textarea{
+    height: 10rem;
+    width: 90%;
+}
+
+.contacto__formulario button{
+    background-color: var(--azul);
+    color: var(--blanco);
+    height: 3rem;
+    width: 10rem;
+    align-self: self-start;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+
+/*Footer*/
+.contenedor__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0rem;
+    font-weight: 500;
+}
+
+.contenedor__footer a{
+    background-color: var(--azul);
+    color: var(--blanco);
+    width: 8rem;
+    height: 2.5rem;
+    align-content: center;
+    align-self: center;
+}
+
 
 /*Tablets y pantallas más grandes*/
 @media (min-width: 750px) {
@@ -202,7 +311,32 @@ body {
         gap: 3rem;
     }
 
-    /*Sobre mi*/
+    /*Informacion academica*/
+    .informacionAcademica__lista{
+        align-self: center;
+    }
+
+
+    .informacionAcademica__lista h3{
+        font-size: 0.7rem;
+        gap: 1rem;
+    }
+
+    .informacionAcademica__lista p{
+        font-size: 0.7rem;
+    }
+
+    .informacionAcademica__div{
+        width: 13rem;
+        height: 13rem;
+    }
+    
+    .informacionAcademica__div img{
+        width: 9rem;
+        height: 9rem;
+        object-fit: contain;   
+    }
+
 
 }
 
@@ -236,19 +370,14 @@ body {
 
     /*Informacion academica*/
     .informacionAcademica__lista{
-        display: flex;
-        flex-direction: row;
-        align-content: space-around;
-        flex-wrap: wrap;
-        margin: 1rem 3rem 1rem 11%;
-        gap: 1.3rem;
+        align-self: center;
+        gap: 2rem;
     }
     
     .informacionAcademica__div{
-        width: 26.5rem;
-        height: 10rem;
-        padding: 5rem 0rem;
-        background-color: var(--blanco);
+        width: 23rem;
+        height: 15rem;
+        align-content: center;
     }
     
     .informacionAcademica__div img{
@@ -256,4 +385,51 @@ body {
         height: 10rem;
         object-fit: contain;   
     }
+
+    .informacionAcademica__lista h3{
+        font-size: 1.3rem;
+    }
+
+    .informacionAcademica__lista p{
+        font-size: 1rem;
+    }
+
+    /*Experiencia*/
+    .experiencia__section{
+        padding-bottom: 3rem;
+        gap: 3rem;
+    }
+
+
+    .experiencia__ul{
+        justify-content: center;
+    }
+
+
+    /*Experiencia izquierdo*/
+    .izquierdo{
+        display: flex;
+        flex-direction: row;
+        margin-left: 11%;
+        margin-bottom: 2rem;
+    }
+
+    .izquierdo img{
+        height: 28%;
+        width: 60%;
+    }
+
+    /*Experiencia derecho*/
+    .derecho{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 2%;
+        margin-bottom: 2rem;
+    }
+
+    .derecho img{
+        height: 28%;
+        width: 60%;
+    }
+
 }

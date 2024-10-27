@@ -148,44 +148,49 @@
     <!--Experiencia profesional-->
     <articule class="contenedor__Experiencia" >
         <h2 class="titulo" >Experiencia profesional</h2>
-        <section class="contenedor__Experiencia--izquierdo" >
-            <img src="" alt="Encriptador de texto">
-            <ul>
-                <li><h3>Encriptador de texto</h3></li>
-                <li><p>Challengue Alura Latam</p></li>
-                <li>
-                    <a href="#" aria-label="Botón para ir al repositorio" >Repositorio</a>
-                    <a href="#" aria-label="Botón ver más" >Ver más</a>
-                </li>
-            </ul>
-        </section>
-        <section class="contenedor__Experiencia--derecho" >
-            <img src="" alt="Juego del número secreto">
-            <ul>
+        <section class="experiencia__section izquierdo" >
+            <img src="assets/juego-secreto.PNG" alt="Juego del número secreto">
+            <ul class="experiencia__ul" >
                 <li><h3>Juego del número secreto</h3></li>
                 <li><p>Proyecto Alura Latam</p></li>
                 <li>
-                    <a href="#" aria-label="Botón para ir al repositorio" >Repositorio</a>
-                    <a href="#" aria-label="Botón ver más" >Ver más</a>
+                    <a target="_blank" href="https://github.com/VanePe/juego-secreto" aria-label="Botón para ir al repositorio" >Repositorio</a>
+                    <a target="_blank" href="https://vanepe.github.io/juego-secreto/" aria-label="Botón ver más" >Ver más</a>
+                </li>
+            </ul>
+        </section>
+        <section class="experiencia__section derecho" >
+            <img  src="assets/encriptador-texto.PNG" alt="Encriptador de texto">
+            <ul class="experiencia__ul">
+                <li><h3>Encriptador de texto</h3></li>
+                <li><p>Challengue Alura Latam</p></li>
+                <li>
+                    <a target="_blank" href=https://github.com/VanePe/encriptador-texto" aria-label="Botón para ir al repositorio" >Repositorio</a>
+                    <a target="_blank" href="https://vanepe.github.io/encriptador-texto/" aria-label="Botón ver más" >Ver más</a>
                 </li>
             </ul>
         </section>
     </articule>
 
     <!--Redes para contactar-->
-    <section>
-        <h2 class="titulo" >Contacto</h2>
-        <form>
+    <section class="contenedor__contacto" >
+        <div class="contacto__div" >
+            <h2 class="titulo" >Contacto</h2>
+            <p>Puede contactarme por medio del siguiente formulario.</p>
+        </div>
+    
+        <form class="contacto__formulario" >
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo Electrónico">
+            <input type="text" placeholder="Asunto" >
             <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar Mensaje</button>
         </form>
     </section>
 
     <!--Pide pagina-->
-    <footer>
-        <h4>Desarrollado por Laura Ibañez</h4>
+    <footer class="contenedor__footer" >
+        <h4 class="" >Desarrollado por Laura Ibañez</h4>
         <p>2024</p>
         <a href="./assets/Hoja de Vida Laura Vanessa Ibañez Perez.pdf" download="Curriculo" >
             Curriculo
