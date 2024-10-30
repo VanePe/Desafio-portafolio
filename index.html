@@ -9,16 +9,16 @@
 </head>
 <body>
     <!--Cabecera-->
-    <header class="contenedor__cabecera" >
+    <header  class="contenedor__cabecera" >
         <p class="cabecera__negrilla" aria-label="Laura Ibañez" ><img src="assets/stars.svg">Laura Ibáñez</p>
         <nav class="cabecera__nav" >
             <ul class="cabecera__lista" >
-                <li class="cabecera__lista--none" >Sobre mi</li>
-                <li class="cabecera__lista--none"  >Skills</li>
-                <li class="cabecera__lista--none"  >Hobbies</li>
-                <li class="cabecera__lista--none"  >Formación</li>
-                <li class="cabecera__lista--none"  >Proyectos</li>
-                <li class="cabecera__negrilla" >Contacto</li>
+                <a href="#sobre-mi" class="cabecera__lista--none">Sobre mi</a> 
+                <a href="#habilidades" class="cabecera__lista--none"  >Habilidades</a>
+                <a href="#pasatiempos" class="cabecera__lista--none"  >Pasatiempos</a>
+                <a href="#infrmacion-academica" class="cabecera__lista--none"  >Formación</a>
+                <a href="#experiencia" class="cabecera__lista--none"  >Proyectos</a>
+                <a href="#contacto" class="cabecera__negrilla" >Contacto</a>
             </ul>
         </nav>
     </header>
@@ -43,7 +43,7 @@
     </section>
 
     <!--Sección sobre mi-->
-    <section class="contenedor__sobreMi" >
+    <section id="sobre-mi" class="contenedor__sobreMi" >
         <h2 class="titulo sobreMi__texto" >Sobre Mi</h2>
         <p class="sobreMi__texto" >Lorem ipsum dolor sit amet consectetur adipiscing elit erat aliquam, dui mattis morbi hac platea tellus tempus primis vitae, 
             suspendisse molestie bibendum himenaeos imperdiet donec ligula odio. Convallis orci montes non cubilia praesent bibendum morbi augue 
@@ -62,7 +62,7 @@
     <!--Habilidades y pasatiempos-->
     <articule class="contenedor__habilidadesPasatiempos" >
         <!--Habilidades-->
-        <section class="contenedor__habilidadesPasatiempos" >
+        <section id="habilidades" class="contenedor__habilidadesPasatiempos" >
             <h2 class="titulo" >Habilidades</h2>
             <ul class="habilidadesPasatiempos__lista" >
                 <li class="habilidadesPasatiempos__items" >
@@ -89,7 +89,7 @@
         </section>
 
         <!--Pasatiempos-->
-        <section class="contenedor__habilidadesPasatiempos" >
+        <section id="pasatiempos" class="contenedor__habilidadesPasatiempos" >
             <h2 class="titulo">Pasatiempos</h2>
             <ul class="habilidadesPasatiempos__lista" >
                 <li class="habilidadesPasatiempos__items">
@@ -118,7 +118,7 @@
     </articule>
 
     <!--Formación academica-->
-    <section class="contenedor__informacionAcademica" >
+    <section id="infrmacion-academica" class="contenedor__informacionAcademica" >
         <h2 class="titulo" >Formación academica</h2>
         <ul class="informacionAcademica__lista">
             <li class="informacion__lista--li" >
@@ -146,7 +146,7 @@
     </section>
 
     <!--Experiencia profesional-->
-    <articule class="contenedor__Experiencia" >
+    <articule id="experiencia" class="contenedor__Experiencia" >
         <h2 class="titulo" >Experiencia profesional</h2>
         <section class="experiencia__section izquierdo" >
             <img src="assets/juego-secreto.PNG" alt="Juego del número secreto">
@@ -179,7 +179,7 @@
             <p>Puede contactarme por medio del siguiente formulario.</p>
         </div>
     
-        <form class="contacto__formulario" >
+        <form id="contacto" class="contacto__formulario" >
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo Electrónico">
             <input type="text" placeholder="Asunto" >

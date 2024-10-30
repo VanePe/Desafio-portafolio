@@ -6,11 +6,8 @@
     --blanco: #FFFFFF;
     --negro-gris: #343a40;
     --balnco-fondo: #F5F5F5;
+    --gris-claro: #9db4c0;
     --raleway-font: "Raleway", sans-serif;
-}
-
-*{
-    border: 1px solid red;
 }
 
 body {
@@ -99,6 +96,7 @@ body {
     gap: 1rem;
     background-color: var(--tierra-fondo);
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .sobreMi__texto{
@@ -258,14 +256,46 @@ body {
 }
 
 .contacto__formulario input{
-    height: 4.5rem;
+    padding: 1rem 0rem 1.5rem 1rem;
     width: 90%;
+    font-size: 0.8rem;
+    color: var(--gris-claro);
+    border-bottom: 0.1rem solid var(--gris-claro);
 }
 
 .contacto__formulario textarea{
     height: 10rem;
-    width: 90%;
+    width: 89%;
+    color: var(--gris-claro);
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+    border-bottom: 0.1rem solid var(--gris-claro);
 }
+
+input:focus{
+    outline: none;
+    border-bottom: 0.1rem solid var(--azul);
+    font-size: 1rem;
+    color: var(--negro-gris);
+}
+
+input:focus::placeholder {
+  transform: translateY(-1rem);
+  color: var(--azul);
+}
+
+textarea:focus{
+    outline: none;
+    border-bottom: 0.1rem solid var(--azul);
+    font-size: 1rem;
+    color: var(--negro-gris);
+}
+
+textarea:focus::placeholder {
+  transform: translateY(-0.8rem);
+  color: var(--azul);
+}
+
 
 .contacto__formulario button{
     background-color: var(--azul);
@@ -276,6 +306,7 @@ body {
     margin-left: 5%;
     margin-bottom: 2rem;
 }
+
 
 /*Footer*/
 .contenedor__footer{
