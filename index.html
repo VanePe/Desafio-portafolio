@@ -128,14 +128,14 @@
                 <h3>Estudiante de ingenieria en sistemas</h3>
                 <p>2020 - Presente</p>
             </li>
-            <li>
+            <li class="informacion__lista--li" >
                 <div class="informacionAcademica__div" >
                     <img src="assets/Alura-logo.svg" alt="Logo de Alura">
                 </div>
                 <h3>Desafío encriptador de texto</h3>
                 <p>2024 Alura Latam</p>
             </li>
-            <li>
+            <li class="informacion__lista--li" >
                 <div class="informacionAcademica__div" >
                     <img src="assets/Alura-logo.svg" alt="Logo de Alura">
                 </div>
@@ -174,18 +174,22 @@
 
     <!--Redes para contactar-->
     <section class="contenedor__contacto" >
-        <div class="contacto__div" >
-            <h2 class="titulo" >Contacto</h2>
-            <p>Puede contactarme por medio del siguiente formulario.</p>
+        <img src="assets/telefono-contacto.svg" alt="Imagen de un telefono" >
+
+        <div class="contacto__formulario--div" >
+            <div class="contacto__div" >
+                <h2 class="titulo" >Contacto</h2>
+                <p>Puede contactarme por medio del siguiente formulario.</p>
+            </div>
+            <form id="contacto" class="contacto__formulario" >
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo Electrónico">
+                    <input type="text" placeholder="Asunto" >
+                    <textarea placeholder="Mensaje"></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+            </form>
         </div>
-    
-        <form id="contacto" class="contacto__formulario" >
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo Electrónico">
-            <input type="text" placeholder="Asunto" >
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
+
     </section>
 
     <!--Pide pagina-->

@@ -136,6 +136,11 @@ body {
     font-size: 1rem;
     padding: 5rem 0rem 0rem 1rem;
     text-align: start;
+    transition: transform 0.3s ease;
+}
+
+.habilidadesPasatiempos__items:hover{
+    transform: scale(1.1);
 }
 
 .habilidadesPasatiempos__items img{
@@ -169,6 +174,14 @@ body {
 .informacionAcademica__lista p{
     text-align: start;
     padding-bottom: 1rem;
+}
+
+.informacion__lista--li{
+    transition: transform 0.3s ease;
+}
+
+.informacion__lista--li:hover{
+    transform: scale(1.1);
 }
 
 .informacionAcademica__div{
@@ -220,6 +233,12 @@ body {
     width: 8rem;
     height: 3rem;
     align-content: center;
+    transition: transform 0.3s ease;
+
+}
+
+.experiencia__ul a:hover{
+    transform: scale(1.1);
 }
 
 .experiencia__ul a:nth-child(1){
@@ -246,6 +265,10 @@ body {
 .contacto__div p{
     padding-bottom: 2rem;
 
+}
+
+.contenedor__contacto img{
+    display: none;
 }
 
 .contacto__formulario{
@@ -280,7 +303,6 @@ input:focus{
 }
 
 input:focus::placeholder {
-  transform: translateY(-1rem);
   color: var(--azul);
 }
 
@@ -292,7 +314,6 @@ textarea:focus{
 }
 
 textarea:focus::placeholder {
-  transform: translateY(-0.8rem);
   color: var(--azul);
 }
 
@@ -367,8 +388,6 @@ textarea:focus::placeholder {
         height: 9rem;
         object-fit: contain;   
     }
-
-
 }
 
 /*Pantallas grandes*/
@@ -431,11 +450,9 @@ textarea:focus::placeholder {
         gap: 3rem;
     }
 
-
     .experiencia__ul{
         justify-content: center;
     }
-
 
     /*Experiencia izquierdo*/
     .izquierdo{
@@ -463,4 +480,37 @@ textarea:focus::placeholder {
         width: 60%;
     }
 
+    /*Contacto*/
+    .contenedor__contacto{
+        display: flex;
+        padding: 2rem 13.2rem;
+        gap: 2rem;
+    }
+
+    .contenedor__contacto img{
+        display: flex;
+    }
+
+    .contacto__formulario--div{
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+    }
+
+    .contacto__div{
+        padding: 0rem;
+    }
+
+    .contacto__formulario{
+        gap: 2rem;
+    }
+
+    .contacto__formulario input{
+        width: 40rem;
+    }
+    
+    .contacto__formulario textarea{
+        height: 5rem;
+        width: 39rem;
+    }
 }
